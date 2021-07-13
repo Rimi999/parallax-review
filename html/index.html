@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>parallax 사이트</title>
+	<title>parallax</title>
 	<link rel="stylesheet" href="../css/all.css">
 	<!-- <link rel="stylesheet" href="../css/animation.css"> -->
 	<link rel="stylesheet" href="../css/base.css">
@@ -13,17 +13,43 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
 	<!-- header-wrapper -->
 	<header class="header-wrapper">
+		<div class="header-wrap">
+			<ul class="navi-wrapper">
+				<li class="navi"><a href="#home">HOME</a></li>
+				<li class="navi">
+					<a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+				</li>
+				<li class="navi">
+					<a href="#portfolio"><i class="fa fa-th"></i> PORTOLIO</a>
+				</li>
+				<li class="navi">
+					<a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+				</li>
+			</ul>
+			<div class="mo-menu"><i class="fa fa-bars"></i></div>
+			<div class="search">
+				<a href="#"><i class="fa fa-search"></i></a>
+			</div>
+			<ul class="mo-navi-wrapper">
+				<li class="mo-navi"><a href="#about"> ABOUT</a></li>
+				<li class="mo-navi"><a href="#portfolio">PORTOLIO</a></li>
+				<li class="mo-navi"><a href="#contact">CONTACT</a></li>
+				<li class="mo-navi"><a href="#contact">SEARCH</a></li>
+			</ul>
+		</div>
 	</header>
 
 	<!-- main-wrapper -->
-
 	<section class="main-wrapper">
+		<!-- <p class="title">MY WEBSITE LOGO</p> -->
+		<img src="../img/parallax1.jpg" alt="">
 	</section>
 
 	<!-- about-wrapper -->
@@ -46,4 +72,5 @@
 
 </body>
 
+<script src="../js/index.js"></script>
 </html>

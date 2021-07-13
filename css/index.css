@@ -1,12 +1,32 @@
 
 /******* 전역설정 ********/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+.wapper {max-width: 980px; margin: 0 auto;}
 
-/******* header-wrapper ******/ 
+
+/******* header-wrapper ******/
+.header-wrapper {position: fixed; color: #777; width: 100%;}
+.header-wrapper .header-wrap {display: flex; justify-content: space-between; align-items: center;
+	position: absolute; width: 100%;}
+.header-wrapper .navi-wrapper {display: flex;}
+.header-wrapper .navi-wrapper .navi,
+.header-wrapper .search {padding: 1em;}
+.header-wrapper .navi-wrapper .navi:hover,
+.header-wrapper .mo-menu:hover, 
+.header-wrapper .mo-navi-wrapper .mo-navi:hover {background-color: #ddd; color: #000;}
+.header-wrapper .search:hover {background-color: red; color: #fff;}
+
+.header-wrapper .mo-menu {padding: 1em; display: none;}
+.header-wrapper .mo-navi-wrapper {position: absolute; top: 48px; background-color: #fff; }
+.header-wrapper .mo-navi-wrapper .mo-navi {padding: 1em; width: 100vh;}
+
+
 /******* main-wrapper ******/
+img {width: 100%;}
+
 /******* about-wrapper ******/
-/******* contact-wrapper  ******/
-/******* footer-wrapper   ******/
+/******* contact-wrapper ******/
+/******* footer-wrapper ******/
 /******* 반응형 responsive ********/
 	@media all and (max-width:1400px) {
 	
@@ -16,12 +36,17 @@
 	}
 	
 	@media all and (max-width:992px) {
-
+		
 	}
+
 	@media all and (max-width:768px) {
+		
 
 	}
 	@media all and (max-width:576px) {
+	.navi-wrapper .navi:not(:first-child) {display: none;}
+	.header-wrapper .search {display: none;}
+	.header-wrapper .mo-menu {display: block;}
 }
 
 
