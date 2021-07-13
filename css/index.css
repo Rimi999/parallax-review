@@ -1,0 +1,28 @@
+
+/******* 전역설정 ********/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/******* header-wrapper ******/ 
+/******* main-wrapper ******/
+/******* about-wrapper ******/
+/******* contact-wrapper  ******/
+/******* footer-wrapper   ******/
+/******* 반응형 responsive ********/
+	@media all and (max-width:1400px) {
+	
+	}
+
+	@media all and (max-width: 1056px) {
+	}
+	
+	@media all and (max-width:992px) {
+
+	}
+	@media all and (max-width:768px) {
+
+	}
+	@media all and (max-width:576px) {
+}
+
+
+
