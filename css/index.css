@@ -1,7 +1,18 @@
 
 /******* 전역설정 ********/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-.wapper {max-width: 980px; margin: 0 auto;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html, body {font-family: 'Roboto', sans-serif;}
+
+.wapper {max-width: 980px; margin: 0 auto; padding: 3em 1em; }
+
+.title-wrap {color: #777; text-align: center;}
+.title-wrap .title {font-size: 1.5em; padding-bottom: 1em; }
+.title-wrap .sub {font-style: italic; line-height: 1.5;}
+
+.bt-wrap {text-align: center; margin: 2em 0;}
+.bt-wrap .btn {background-color: #eee; padding: 1em;}
+.bt-wrap .btn:hover {background-color: #bbb;}
 
 
 /******* header-wrapper ******/
@@ -22,11 +33,69 @@
 
 
 /******* main-wrapper ******/
-img {width: 100%;}
+.main-wrapper {background-image: url(../img/parallax1.jpg); background-repeat: no-repeat;
+	background-size: cover; height: 100vh;}
+
 
 /******* about-wrapper ******/
+.about-wrapper {color: #777;}
+.about-wrap .cnt {padding: 1em 0; text-align: justify; line-height: 1.5; letter-spacing: -0.5px;}
+.about-wrap .top-wrap {padding-bottom: 1.5em;}
+.about-wrap .bottom-wrap {display: flex; align-items: center;}
+.about-wrap .bottom-wrap .left-wrap {width: 50%; margin-right: 1em;}
+.about-wrap .bottom-wrap .left-wrap .name {text-align: center; padding-bottom: 1em; font-weight: 500;}
+.about-wrap .bottom-wrap .left-wrap img {width: 100%; opacity: 0.6;}
+.about-wrap .bottom-wrap .left-wrap img:hover {opacity: 1;}
+.about-wrap .bottom-wrap .right-wrap {width: 50%; margin-left: 1em;}
+
+.skill-wrap .title {text-align: center; font-size: 1.25em; padding: 3em 0;}
+.skill-wrap .skill-bars .sub {letter-spacing: 10px;}
+.skill-wrap .skill-bars .bar-wrap {width: 100%; background-color: #eee; margin: 1em 0;}
+.skill-wrap .skill-bars .bar-wrap .bar {background-color: #666; color: #fff; text-align: center;
+	padding: 0.75em;}
+.skill-bars .bar-wrap .bar1 {width: 90%;}
+.skill-bars .bar-wrap .bar2 {width: 85%;}
+.skill-bars .bar-wrap .bar3 {width: 75%;}
+
+.pfj-wrap {display: flex; color: #fff;}
+.pfj-wrap .pfj {background-color: #666; width: 25%; text-align: center; padding: 3em 0;}
+.pfj-wrap .pfj .number {font-size: 1.5em; padding-bottom: .75em;}
+
+
+/******* pf-wrapper ******/
+/* .pf-wrapper {background-image: url(../img/parallax2.jpg); background-repeat: no-repeat;
+	background-size: cover; height: 100vh;} */
+	.pf-wrapper .img-wrapper {padding-top: 2em;}
+	.pf-wrapper .img-wrapper .img-wrap {display: flex; padding-bottom: 1em;}
+.pf-wrapper .img-wrap img {width: 25%; padding-right: 1%;}
+.pf-wrapper .img-wrap img:nth-child(4) {padding-right: 0;}
+
+
 /******* contact-wrapper ******/
+.contact-wrapper .content-wrap {padding: 2em 0; display: flex; color: #777;}
+.content-wrap .img-wrap {width: 35%; padding-right: 2%;}
+.content-wrap .img-wrap img {width: 100%;}
+.content-wrap .info-wrapper {width: 65%; padding-left: 2%;}
+.content-wrap .info-wrapper .info-wrap .info {font-size: 1.25em; line-height: 2em;}
+.content-wrap .info-wrapper .info-wrap .info i {margin-right: 1em;}
+.content-wrap .info-wrapper .email-wrap input {border: solid 1px #bbb; padding: 0.5em;}
+.content-wrap .email-wrap input[name="name"] {width: 48.5%; margin-right: 1%;}
+.content-wrap .email-wrap input[name="email"] {width: 48.5%; margin-left: 1%;}
+.content-wrap .email-wrap input[name="message"] {width: 99.75%; margin-top: 1em;}
+
+
 /******* footer-wrapper ******/
+.footer-wrapper {background-color: rgba(0, 0, 0, .6); display: flex; flex-direction: column;
+	text-align: center; padding: 2em 0;}
+.footer-wrapper:hover {background-color: rgba(0, 0, 0, 1);}
+.footer-wrapper .sns-wrap {color: #fff; padding-bottom: 1.25em; font-size: 1.5em;}
+.footer-wrapper .sns-wrap a {margin-left: 0.1em;}
+.footer-wrapper .sns-wrap a:last-child {margin-left: 0;}
+.footer-wrapper .link-wrap {color: #fff;}
+.footer-wrapper .link-wrap a {text-decoration: underline;}
+.footer-wrapper .link-wrap a:hover {color: rgb(0, 165, 0);}
+
+
 /******* 반응형 responsive ********/
 	@media all and (max-width:1400px) {
 	
