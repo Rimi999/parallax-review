@@ -65,9 +65,10 @@ html, body {font-family: 'Roboto', sans-serif;}
 /******* pf-wrapper ******/
 /* .pf-wrapper {background-image: url(../img/parallax2.jpg); background-repeat: no-repeat;
 	background-size: cover; height: 100vh;} */
-	.pf-wrapper .img-wrapper {padding-top: 2em;}
-	.pf-wrapper .img-wrapper .img-wrap {display: flex; padding-bottom: 1em;}
+.pf-wrapper .img-wrapper {padding-top: 2em;}
+.pf-wrapper .img-wrapper .img-wrap {display: flex; padding-bottom: 1em;}
 .pf-wrapper .img-wrap img {width: 25%; padding-right: 1%;}
+.pf-wrapper .img-wrap img:hover {opacity: 0.7;}
 .pf-wrapper .img-wrap img:nth-child(4) {padding-right: 0;}
 
 
